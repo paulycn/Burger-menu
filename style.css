@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:'Times New Roman', Times, serif;
 }
 
 #burger_btn {
     background-color: pink;
     border: 1px solid hotpink;
     box-shadow: 0 0 10px hotpink;
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,8 +29,9 @@
 }
 
 #burger_menu {
-    background-color: pink;
-    width: 15vw;
+    background-color: #ffc0cb20;
+    backdrop-filter: blur(10px);
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -39,7 +40,7 @@
     position: fixed;
     z-index: 10;
     right: -100vw;
-    transition: right 0.3s;
+    transition: right 0.3s, opacity 0.4s;
 }
 
 #burger_menu a {
@@ -57,16 +58,15 @@
 }
 
 #burger_menu nav a{
-    font-size: 30px;
+    font-size: 45px;
 }
 
 #burger_menu nav a:hover {
-    text-decoration: underline;
+    border-bottom: 2px pink solid;
 }
 
 #burger_menu .socials {
     display: flex;
-    flex-direction: column;
     gap: 20px;
     padding: 25px;
 }
