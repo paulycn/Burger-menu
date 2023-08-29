@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#burger_btn {
+    background-color: pink;
+    border: 1px solid hotpink;
+    box-shadow: 0 0 10px hotpink;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+#burger_btn img {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+
+#burger_menu {
+    background-color: pink;
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    right: -100vw;
+    transition: right 0.3s;
+}
+
+#burger_menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px ;
+}
+
+#burger_menu nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#burger_menu nav a{
+    font-size: 30px;
+}
+
+#burger_menu nav a:hover {
+    text-decoration: underline;
+}
+
+#burger_menu .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+}
+
+#burger_menu .socials img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/back.jpeg);
+    background-position: center;
+    background-size: cover;
+}
